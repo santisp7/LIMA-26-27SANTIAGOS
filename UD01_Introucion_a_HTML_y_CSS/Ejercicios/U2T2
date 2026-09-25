@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+ <html lang="gl">
+     <head>
+         <meta charset="UTF-8">
+          <meta name="author" content="Santi"> 
+          <meta name="description" content="Exemplo de listas HTML: desordenada, ordenada, mixta e de definición."> 
+          <meta name="keywords" content="HTML, listas, lista desordenada, lista ordenada, lista mixta, lista de definición">
+           <title>Tarea 2.2</title> 
+        </head> 
+           <body> 
+            <h1>Lista desordenada</h1>
+             <ul> 
+                <li>Café</li> 
+                <li>Auga</li> 
+                <li>Leite</li>
+             </ul> 
+             <h1>Lista ordenada</h1>
+              <ol> 
+                <li>Café</li> 
+                <li>Auga</li> <li>Leite</li>
+             </ol> 
+             <h1>Lista mixta</h1>
+              <ul> 
+                <li>Café 
+                    <ol> 
+                        <li>Só</li> 
+                        <li>Con leite
+                             <ol> 
+                                <li>Latte</li>
+                                 <li>Capuccino</li> 
+                                </ol> 
+                            
+                            
+                            </li> 
+                        
+                        </ol> 
+                    </li> 
+                    <li>Auga</li> 
+                    <li>Leite</li>
+                 </ul>
+                  <h1>Lista de definición</h1> 
+                  <dl>
+                     <dt>Coche</dt> 
+                     <dd>Vehículo de catro rodas</dd>
+                      <dt>Moto</dt> 
+                      <dd>Vehículo de dúas rodas</dd> 
+                    </dl>
+                 </body>
+                  </html>
