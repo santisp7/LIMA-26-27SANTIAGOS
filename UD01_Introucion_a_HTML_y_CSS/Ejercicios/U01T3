@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="O teu nome aquí">
+    <meta name="description" content="Lista das cancións da semana con detalles sobre os primeiros postos.">
+    <meta name="keywords" content="música, cancións, lista da semana, éxitos">
+    <title>Lista de Cancións da Semana</title>
+</head>
+<body>
+
+    <h1>Os tres primeiros da semana son</h1>
+
+    <!-- Lista inversa ou elementos manuais para respectar a orde 3, 2, 1 do documento -->
+    <ol reversed start="3">
+        <li>
+            <strong>Co número 3</strong>
+            <details>
+                <summary>Detalles</summary>
+                <p>Leave a light on</p>
+            </details>
+        </li>
+        <li>
+            <strong>Co número 2</strong>
+            <details>
+                <summary>Detalles</summary>
+                <p>Déjala que baile</p>
+            </details>
+        </li>
+        <li>
+            <strong>E co número 1</strong>
+            <details>
+                <summary>Detalles</summary>
+                <p>Fuego</p>
+            </details>
+        </li>
+    </ol>
+
+    <h2>Lista de cancións da semana do 11 ó 20</h2>
+
+    <!-- Lista ordenada que comeza explicitamente no número 11 -->
+    <ol start="11">
+        <li>Grils like you</li>
+        <li>Flames</li>
+        <li>Gira</li>
+        <li>Clandestino</li>
+        <li>1,2,3</li>
+        <li>Contradicción</li>
+        <li>Te esperaré toda la vida</li>
+        <li>Back to you</li>
+        <li>Qué tienes tú</li>
+        <li>I like it</li>
+    </ol>
+
+</body>
+</html>
