@@ -1,59 +1,9 @@
-<!DOCTYPE html>
-<html lang="gl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica: Mapa de Imaxes</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            color: #333;
-            margin: 0;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        h1 {
-            color: #1e293b;
-            margin-bottom: 10px;
-        }
-        p {
-            color: #64748b;
-            margin-bottom: 30px;
-            font-size: 1.1rem;
-        }
-        .container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-            display: inline-block;
-            max-width: 100%;
-        }
-        img {
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            display: block;
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
+<h1>Práctica: Mapa de Imaxes</h1>
+<img src="Imágenes/escritorio.jpg" usemap="#image-map" alt="Mesa de traballo">
 
-    <h1>Práctica: Mapa de Imaxes</h1>
-    <p>Pasa o rato por riba dos obxectos (móbiles, calculadora ou cunca de café) para interactuar coas ligazóns.</p>
-
-    <div class="container">
-        <!-- Ruta corregida apuntando a la subcarpeta Imágenes -->
-        <img src="Imágenes/escritorio.jpg" usemap="#image-map" alt="Mesa de traballo">
-
-        <map name="image-map">
-            <area target="_blank" alt="MediaMarkt" title="MediaMarkt" href="https://mediamarkt.es" coords="441,198,526,207,514,341,425,333" shape="poly">
-            <area target="_blank" alt="Venta de móviles" title="Venta de móviles" href="https://pccomponentes.com" coords="85,114,140,135,215,258,1,194" shape="poly">
-            <area target="_blank" alt="Cafetería" title="Cafetería" href="https://starbucks.es" coords="210,77,385,54,392,154,227,179" shape="poly">
-        </map>
-    </div>
-
-</body>
-</html>
+<!-- Mapa con las zonas y enlaces -->
+<map name="image-map">
+    <area target="_blank" alt="MediaMarkt" title="MediaMarkt" href="https://mediamarkt.es" coords="441,198,526,207,514,341,425,333" shape="poly">
+    <area target="_blank" alt="Venta de móviles" title="Venta de móviles" href="https://pccomponentes.com" coords="85,114,140,135,215,258,1,194" shape="poly">
+    <area target="_blank" alt="Cafetería" title="Cafetería" href="https://starbucks.es" coords="210,77,385,54,392,154,227,179" shape="poly">
+</map>
