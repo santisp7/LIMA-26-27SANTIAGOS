@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="gl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Santi">
+    <meta name="description" content="Exemplo de listas HTML: desordenada, ordenada, mixta e de definición.">
+    <meta name="keywords" content="HTML, listas, lista desordenada, lista ordenada, lista mixta, lista de definición">
+    <title>Tarea 2.3</title>
+</head>
+
+<body>
+    <h1>Os tres primeiros da semana son</h1>
+    
