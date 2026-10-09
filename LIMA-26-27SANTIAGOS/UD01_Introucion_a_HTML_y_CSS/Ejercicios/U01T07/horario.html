@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Santiago">
     <title>horario</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<body>
+
 <table border="1">
     <thead>
-        <tr >
+        <!-- Fila 1: Título superior que ocupa las 6 columnas -->
+        <tr>
+            <th colspan="6" class="titulo-dam">1º DAM</th>
+        </tr>
+        <!-- Fila 2: Cabecera con los días correctamente alineados -->
+        <tr>
             <th>Horario</th>
             <th>Lunes</th>
             <th>Martes</th>
@@ -20,98 +28,97 @@
         <!-- 8:30 - 9:20 -->
         <tr>
             <td>8:30 - 9:20</td>
-            <td >ContDes<br>Cristina<br>Aula 1º DAM</td>
-            <td >BD<br>Erica<br>Aula 1º DAM</td>
-            <td>IngProf<br>Cristina<br>Aula 1º DAM</td>
-            <td >LIMA<br>Janeiro<br>Aula 1º DAM</td>
-            <td >BD<br>Erica<br>Aula 1º DAM</td>
+            <td rowspan="2" class="bd">BD<br>Erica<br>Aula 1º DAM</td>
+            <td class="cont-des">ContDes<br>Cristina<br>Aula 1º DAM</td>
+            <td class="ing-prof">IngProf<br>Cristina<br>Aula 1º DAM</td>
+            <td rowspan="2" class="bd">BD<br>Erica<br>Aula 1º DAM</td>
+            <td rowspan="2" class="lima">LIMA<br>Janeiro<br>Aula 1º DAM</td>
         </tr>
         <!-- 9:20 - 10:10 -->
         <tr>
             <td>9:20 - 10:10</td>
-            <td >LIMA<br>Janeiro<br>Aula 1º DAM</td>
-            <td >BD<br>Erica<br>Aula 1º DAM</td>
-            <td >IngProf<br>Cristina<br>Aula 1º DAM</td>
-            <td >LIMA<br>Janeiro<br>Aula 1º DAM</td>
-            <td >ContDes<br>Cristina<br>Aula 1º DAM</td>
+            <!-- Lunes viene combinado (BD) -->
+            <td class="lima">LIMA<br>Janeiro<br>Aula 1º DAM</td>
+            <td class="cont-des">ContDes<br>Cristina<br>Aula 1º DAM</td>
+            <!-- Jueves viene combinado (BD) -->
+            <!-- Viernes viene combinado (LIMA) -->
         </tr>
         <!-- RECREO -->
-        <tr >
+        <tr>
             <td>10:10 - 10:30</td>
-            <td colspan="5">Recreo</td>
+            <td colspan="5" class="descanso">recreo</td>
         </tr>
         <!-- 10:30 - 11:20 -->
         <tr>
             <td>10:30 - 11:20</td>
-            <td >ItPerEmpl<br>Iria V.<br>Aula 1º DAM</td>
-            <td >ContDes<br>Cristina<br>Aula 1º DAM</td>
-            <td >SistInf<br>Lucas<br>Aula 1º DAM</td>
-            <td >Prog<br>Toni<br>Aula 1º DAM</td>
-            <td >SustAplicSistProd<br>Iria V.<br>Aula 1º DAM</td>
+            <td class="it-per-empl">ItPerEmpl<br>Iria V.<br>Aula 1º DAM</td>
+            <td class="ing-prof">IngProf<br>Cristina<br>Aula 1º DAM</td>
+            <td rowspan="2" class="sist-inf">SistInf<br>Lucas<br>Aula 1º DAM</td>
+            <td class="lima">LIMA<br>Janeiro<br>Aula 1º DAM</td>
+            <td rowspan="2" class="prog">Prog<br>Toni<br>Aula 1º DAM</td>
         </tr>
         <!-- 11:20 - 12:10 -->
         <tr>
             <td>11:20 - 12:10</td>
-            <td >IngProf<br>Cristina<br>Aula 1º DAM</td>
-            <td >BD<br>Erica<br>Aula 1º DAM</td>
-            <td >SistInf<br>Lucas<br>Aula 1º DAM</td>
-            <td >LIMA<br>Janeiro<br>Aula 1º DAM</td>
-            <td >SistInf<br>Lucas<br>Aula 1º DAM</td>
+            <td class="cont-des">ContDes<br>Cristina<br>Aula 1º DAM</td>
+            <td class="bd">BD<br>Erica<br>Aula 1º DAM</td>
+            <!-- Miércoles viene combinado (SistInf) -->
+            <td class="sust-aplic">SustAplicSistProd<br>Iria V.<br>Aula 1º DAM</td>
+            <!-- Viernes viene combinado (Prog) -->
         </tr>
         <!-- RECREO -->
-        <tr >
+        <tr>
             <td>12:10 - 12:30</td>
-            <td colspan="5">Recreo</td>
+            <td colspan="5" class="descanso">recreo</td>
         </tr>
         <!-- 12:30 - 13:20 -->
         <tr>
             <td>12:30 - 13:20</td>
-            <td >Prog<br>Toni<br>Aula 1º DAM</td>
-            <td >SistInf<br>Lucas<br>Aula 1º DAM</td>
-            <td >BD<br>Erica<br>Aula 1º DAM</td>
-            <td >Prog<br>Toni<br>Aula 1º DAM</td>
-            <td >Prog<br>Toni<br>Aula 1º DAM</td>
+            <td rowspan="2" class="sist-inf">SistInf<br>Lucas<br>Aula 1º DAM</td>
+            <td rowspan="2" class="prog">Prog<br>Toni<br>Aula 1º DAM</td>
+            <td rowspan="2" class="bd">BD<br>Erica<br>Aula 1º DAM</td>
+            <td rowspan="2" class="prog">Prog<br>Toni<br>Aula 1º DAM</td>
+            <td rowspan="2" class="sist-inf">SistInf<br>Lucas<br>Aula 1º DAM</td>
         </tr>
         <!-- 13:20 - 14:10 -->
         <tr>
             <td>13:20 - 14:10</td>
-            <td >Prog<br>Toni<br>Aula 1º DAM</td>
-            <td >SistInf<br>Lucas<br>Aula 1º DAM</td>
-            <td >BD<br>Erica<br>Aula 1º DAM</td>
-            <td >Prog<br>Toni<br>Aula 1º DAM</td>
-            <td >Prog<br>Toni<br>Aula 1º DAM</td>
+            <!-- Todas las celdas de esta fila vienen combinadas desde arriba -->
         </tr>
-        <!-- MEDIODÍA / COMIDA -->
-        <tr >
+        <!-- MEDIODÍA -->
+        <tr>
             <td>14:10 - 14:50</td>
-            <td colspan="5">Mediodía</td>
+            <td colspan="5" class="descanso">mediodía</td>
         </tr>
         <!-- 14:50 - 15:40 -->
         <tr>
             <td>14:50 - 15:40</td>
-            <td >Prog<br>Toni<br>Aula 1º DAM</td>
+            <td rowspan="3" class="prog">Prog<br>Toni<br>Aula 1º DAM</td>
             <td>-</td>
-            <td >ItPerEmpl<br>Iria V.<br>Aula 1º DAM</td>
+            <td rowspan="3" class="it-per-empl">ItPerEmpl<br>Iria V.<br>Aula 1º DAM</td>
             <td>-</td>
             <td>-</td>
         </tr>
         <!-- 15:40 - 16:30 -->
         <tr>
             <td>15:40 - 16:30</td>
-            <td >Prog<br>Toni<br>Aula 1º DAM</td>
+            <!-- Lunes viene combinado (Prog) -->
             <td>-</td>
-            <td >ItPerEmpl<br>Iria V.<br>Aula 1º DAM</td>
+            <!-- Miércoles viene combinado (ItPerEmpl) -->
             <td>-</td>
             <td>-</td>
         </tr>
         <!-- 16:30 - 17:20 -->
         <tr>
             <td>16:30 - 17:20</td>
-            <td >Prog<br>Toni<br>Aula 1º DAM</td>
+            <!-- Lunes viene combinado (Prog) -->
             <td>-</td>
-            <td>ItPerEmpl<br>Iria V.<br>Aula 1º DAM</td>
+            <!-- Miércoles viene combinado (ItPerEmpl) -->
             <td>-</td>
             <td>-</td>
         </tr>
     </tbody>
 </table>
+
+</body>
+</html>
