@@ -7,12 +7,8 @@ body {
 
 
 .folla {
-    background-color: white;
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 30px;
-    border-top: 15px solid red;
-    border-bottom: 15px solid red;
+    background-color: grey;
+   
 }
 
 
