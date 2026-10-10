@@ -1,0 +1,48 @@
+/* Fondo gris da pantalla */
+body {
+    background-color: lightgrey;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+
+.folla {
+    background-color: white;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    border-top: 15px solid red;
+    border-bottom: 15px solid red;
+}
+
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+
+h2 {
+    color: red;
+    text-align: right;
+}
+
+
+h3 {
+    color: red;
+}
+
+
+p {
+    color: darkred;
+}
+
+
+hr {
+    border: 1px solid lightgrey;
+}
+
+
+.contacto p {
+    font-style: italic;
+}
