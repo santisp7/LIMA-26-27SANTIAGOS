@@ -1,56 +1,67 @@
 
 .dia-semana {
-    color: #ffffff;         
-    background-color: #2c3e50; 
+    background-color: #34495e; /* Azul oscuro */
+    color: #ffffff; /* Texto blanco */
     font-weight: bold;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
 }
 
-
 .contdes {
-    background-color: #ffb3ba; 
+    background-color: #ff9aa2; 
+    color: #4a0005;
 }
 
 
 .bd {
-    background-color: #ffdfba; 
+    background-color: #ffb7b2;
+    color: #521511;
 }
 
 
 .ingprof {
-    background-color: #ffffba; 
+    background-color: #ffdac1; 
+    color: #5c3514;
 }
 
 
 .lima {
-    background-color: #baffc9; 
+    background-color: #e2f0cb; 
+    color: #274005;
 }
 
 
 .itperempl {
-    background-color: #bae1ff; 
+    background-color: #b5ead7; 
+    color: #0d4a33;
 }
 
 
 .sistinf {
-    background-color: #e6b3ff; 
+    background-color: #c7ceea; 
+    color: #222952;
 }
 
 
 .prog {
-    background-color: #ffb3e6; 
+    background-color: #e0bbe4; 
+    color: #360a3b;
 }
 
 
 .sustaplicsistprod {
-    background-color: #d9d9d9; 
+    background-color: #fce4ec; 
+    color: #5c0a28;
 }
 
 
-.descanso {
-    background-color: #f2f2f2;
-    color: #888888;
+
+/* Recreo y Mediodía */
+.recreo, .mediodia {
+    background-color: #ecf0f1; 
+    color: #7f8c8d; 
     text-align: center;
-    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
