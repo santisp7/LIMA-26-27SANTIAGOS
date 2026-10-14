@@ -1,37 +1,37 @@
-
+/* El texto principal[cite: 1] */
 body {
     color: #00F;
     background-color: #CFC;
     font-family: Georgia, Cambria, serif;
-    
+    font-size: 16px;
 }
 
-
+/* A cabeceira de nivel 1[cite: 1] */
 h1 {
     color: #F00;
     font-family: Verdana, Calibri, sans-serif;
-   
+    font-size: 32px;
 }
 
-
+/* A cabeceira de nivel 2[cite: 1] */
 h2 {
     color: #A00;
     font-family: Verdana, Calibri, sans-serif;
-   
+    font-size: 24px;
 }
 
-
+/* A cor dos campos de datos do libro[cite: 1] */
 .dato {
     color: #060;
 }
 
-
+/* O texto "Internet" e a "Web"[cite: 1] */
 .noun {
     font-size: 20px;
     font-weight: bold;
 }
 
-
+/* Termos técnicos e siglas (HTML, CSS, etc.)[cite: 1] */
 .tech {
     color: #FFF;
     background-color: #000;
