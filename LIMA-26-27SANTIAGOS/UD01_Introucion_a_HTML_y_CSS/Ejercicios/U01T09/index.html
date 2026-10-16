@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de rexistro</title>
+</head>
+<body>
+
+    <form action="" method="GET">
+        
+       
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" maxlength="50">
+        </p>
+
+        <p>
+            <label for="apelidos">Apelidos:</label>
+            <input type="text" id="apelidos" name="apelidos" maxlength="50">
+        </p>
+
+        <p>
+            Sexo:
+            <input type="radio" id="home" name="sexo" value="home">
+            <label for="home">Home</label>
+            
+            <input type="radio" id="muller" name="sexo" value="muller">
+            <label for="muller">Muller</label>
+        </p>
+
+        <p>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo">
+        </p>
+
+       
+        <p>
+            <label for="poboacion">Poboación:</label>
+            <select id="poboacion" name="poboacion">
+                <option value="coruna">A Coruña</option>
+                <option value="lugo">Lugo</option>
+                <option value="ourense">Ourense</option>
+                <option value="pontevedra">Pontevedra</option>
+            </select>
+        </p>
+
+        
+        <p>
+            <label for="descricion">Descrición:</label>
+            <textarea id="descricion" name="descricion" rows="4" cols="40"></textarea>
+        </p>
+
+        
+        <p>
+            <input type="checkbox" id="novidades" name="novidades" checked>
+            <label for="novidades">Desexo recibir información sobre novidades e ofertas</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="condicions" name="condiciones">
+            <label for="condicions">Declaro aceptar as condicións xerais do programa e a normativa sobre protección de datos</label>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+
+</body>
+</html>
