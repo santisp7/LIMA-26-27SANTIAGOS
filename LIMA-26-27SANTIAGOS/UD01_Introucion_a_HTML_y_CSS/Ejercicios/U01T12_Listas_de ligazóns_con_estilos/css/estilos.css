@@ -1,0 +1,44 @@
+body {
+    background-color: #00bcd4; /* Fondo azul continuo solicitado */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+
+
+ul {
+    list-style-type: square; 
+}
+
+ul ul ul {
+    list-style-type: none; 
+}
+
+
+a, 
+a:hover {
+    text-decoration: none;
+}
+
+
+a:active {
+    color: yellow;
+}
+
+
+
+
+body > ul > li > a:hover {
+    background-color: pink;
+}
+
+/* Enlaces dentro del resto de listas anidadas: Fondo Gris */
+ul ul a:hover {
+    background-color: lightgray;
+}
+
+/* 5. Ajustar el tamaño de la primera letra de todos los enlaces al doble */
+a::first-letter {
+    font-size: 2em; /* Doble del tamaño original */
+}
+
