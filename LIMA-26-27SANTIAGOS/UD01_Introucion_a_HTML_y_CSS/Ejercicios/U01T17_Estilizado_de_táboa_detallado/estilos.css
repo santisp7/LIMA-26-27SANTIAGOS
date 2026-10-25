@@ -1,0 +1,160 @@
+:root {
+  --marfil: #f7f0df;
+  --papel: #fffaf0;
+  --beixe: #eee0c5;
+  --beixe-escuro: #dfc79d;
+  --ocre: #a77736;
+  --ocre-escuro: #68451f;
+  --tinta: #352819;
+  --tinta-suave: #6e5a42;
+  --borde: #b89a6b;
+  --hover: #f0d49a;
+}
+
+/* ---------- Página ---------- */
+body {
+  margin: 0;
+  padding: 24px;
+  background-color: var(--marfil);
+  color: var(--tinta);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+  font-family: "Kaushan Script", cursive;
+  font-weight: normal;
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--ocre-escuro);
+  text-shadow: 3px 3px 6px rgba(53, 40, 25, 0.45);
+}
+
+/* ---------- Tabla ---------- */
+table {
+  width: 480px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: var(--papel);
+  font-size: 0.85rem;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 8px;
+  font-style: italic;
+  font-size: 0.75rem;
+  color: var(--tinta-suave);
+}
+
+th,
+td {
+  vertical-align: middle;
+}
+
+/* ---------- Cabecera ---------- */
+thead th {
+  padding: 10px 8px;
+  background-color: var(--ocre-escuro);
+  color: var(--papel);
+  border-left: 1px solid var(--marfil);
+}
+
+thead th:first-child {
+  border-left: none;
+}
+
+thead th.reinado {
+  padding: 6px 8px;
+  background-color: var(--ocre);
+  font-family: "Kaushan Script", cursive;
+  font-weight: normal;
+  font-size: 0.75rem;
+}
+
+thead th.subcabeceira {
+  padding: 5px 8px;
+  background-color: var(--beixe-escuro);
+  color: var(--tinta);
+  font-size: 0.75rem;
+}
+
+/* ---------- Cuerpo ---------- */
+tbody tr:nth-child(odd) {
+  background-color: var(--papel);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--beixe);
+}
+
+tbody tr:hover {
+  background-color: var(--hover);
+}
+
+tbody th,
+tbody td {
+  padding: 8px 10px;
+  border-bottom: 1px dashed var(--borde);
+}
+
+.retrato {
+  width: 60px;
+  text-align: center;
+}
+
+.retrato img {
+  display: block;
+  margin: 0 auto;
+  width: 36px;
+  border: 2px solid var(--borde);
+  border-radius: 50%;
+}
+
+.monarca {
+  text-align: left;
+  font-weight: bold;
+  color: var(--ocre-escuro);
+  border-left: 2px solid var(--marfil);
+}
+
+.dinastia {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--tinta-suave);
+  border-left: 2px solid var(--marfil);
+}
+
+.ano {
+  text-align: center;
+  color: var(--tinta);
+  border-left: 2px solid var(--marfil);
+}
+
+/* ---------- Pie ---------- */
+tfoot th,
+tfoot td {
+  padding: 5px 10px;
+  border-bottom: 1px solid var(--marfil);
+}
+
+tfoot .resumo-titulo {
+  background-color: var(--ocre);
+  color: var(--papel);
+  text-align: center;
+  border-left: 1px solid var(--marfil);
+}
+
+tfoot tr:first-child th:first-child {
+  border-left: none;
+}
+
+tfoot .resumo-nome {
+  background-color: var(--beixe-escuro);
+  color: var(--ocre-escuro);
+  text-align: left;
+}
+
+tfoot .resumo-dato {
+  background-color: var(--beixe-escuro);
+  color: var(--ocre-escuro);
+  }
