@@ -1,0 +1,44 @@
+input,
+select,
+textarea {
+  background-color: #eeeeee;
+  border: none;
+}
+
+
+input:required,
+select:required,
+textarea:required {
+  background-color: #e3f0fb;
+}
+
+
+input:valid,
+select:valid,
+textarea:valid {
+  background-color: #d9f2de;
+  color: #1b5e20;
+}
+
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  background-color: #f8d7da;
+  color: #8b0000;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 2px solid #1e63d6;
+  color: #0b2a6f;
+}
+
+
+fieldset {
+  border: 1px solid #999999;
+  border-radius: 8px;
+  font-size: 1.1em;
+}

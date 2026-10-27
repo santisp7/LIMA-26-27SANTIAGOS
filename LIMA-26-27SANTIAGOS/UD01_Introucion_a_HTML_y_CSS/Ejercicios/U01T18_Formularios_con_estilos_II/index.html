@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Santiago">
+  <title>Inscripción a un taller tecnológico</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <h1>Inscripción a un taller tecnológico</h1>
+
+  <form action="#" method="post">
+
+    <!-- Campo oculto con el código fijo de campaña -->
+    <input type="hidden" id="campana" name="campana" value="TALLER2026">
+
+    <fieldset>
+      <legend>1. Datos personales</legend>
+
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"
+               placeholder="Tu nombre"
+               required minlength="3" maxlength="40">
+      </p>
+
+      <p>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos"
+               placeholder="Tus apellidos"
+               required minlength="3" maxlength="60">
+      </p>
+
+      <p>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password"
+               placeholder="8-20 caracteres"
+               required minlength="8" maxlength="20"
+               pattern="(?=.*[A-Za-z])(?=.*[0-9]).{8,20}"
+               title="Entre 8 y 20 caracteres, con al menos una letra y un número">
+      </p>
+
+      <p>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email"
+               placeholder="nombre@ejemplo.com"
+               required>
+      </p>
+
+      <p>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono"
+               placeholder="123456789"
+               pattern="[0-9]{9}"
+               title="Debe contener exactamente 9 dígitos">
+      </p>
+
+      <p>
+        <label for="nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="nacimiento" name="nacimiento"
+               required min="1950-01-01" max="2010-12-31">
+      </p>
+
+      <p>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad"
+               placeholder="Edad en años"
+               required min="14" max="100">
+      </p>
+
+      <p>
+        <label for="buscar">Buscar un taller:</label>
+        <input type="search" id="buscar" name="buscar"
+               placeholder="Ej. programación">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. Inscripción</legend>
+
+      <p>
+        <label for="fecha-inscripcion">Fecha y hora de inscripción:</label>
+        <input type="datetime-local" id="fecha-inscripcion" name="fecha_inscripcion"
+               required min="2026-01-01T00:00" max="2027-12-31T23:59">
+      </p>
+
+      <p>
+        <label for="mes">Mes preferido:</label>
+        <input type="month" id="mes" name="mes"
+               min="2027-01" max="2027-12">
+      </p>
+
+      <p>
+        <label for="semana">Semana preferida:</label>
+        <input type="week" id="semana" name="semana"
+               min="2027-W01" max="2027-W52">
+      </p>
+
+      <p>
+        <label for="hora">Hora preferida:</label>
+        <input type="time" id="hora" name="hora"
+               required min="09:00" max="20:00">
+      </p>
+
+      <p>Modalidad de asistencia:</p>
+      <p>
+        <input type="radio" id="presencial" name="modalidad" value="presencial" required>
+        <label for="presencial">Presencial</label>
+        <input type="radio" id="online" name="modalidad" value="online" required>
+        <label for="online">Online</label>
+      </p>
+
+      <p>Talleres de interés:</p>
+      <p>
+        <input type="checkbox" id="programacion" name="talleres" value="programacion">
+        <label for="programacion">Programación</label>
+        <input type="checkbox" id="redes" name="talleres" value="redes">
+        <label for="redes">Redes</label>
+        <input type="checkbox" id="diseno" name="talleres" value="diseno-web">
+        <label for="diseno">Diseño web</label>
+      </p>
+
+      <p>
+        <label for="sesiones">Número de sesiones:</label>
+        <input type="range" id="sesiones" name="sesiones"
+               min="1" max="10" value="5">
+      </p>
+
+      <p>
+        <label for="documento">Documento identificativo (PDF):</label>
+        <input type="file" id="documento" name="documento"
+               accept=".pdf,application/pdf">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. Información adicional</legend>
+
+      <p>
+        <label for="web">Página web personal:</label>
+        <input type="url" id="web" name="web"
+               placeholder="https://ejemplo.com">
+      </p>
+
+      <p>
+        <label for="invitacion">Código de invitación:</label>
+        <input type="text" id="invitacion" name="invitacion"
+               placeholder="Ej. AB12"
+               minlength="4" maxlength="8"
+               pattern="[A-Za-z0-9]{4,8}"
+               title="Entre 4 y 8 caracteres alfanuméricos">
+      </p>
+
+      <p>
+        <label for="color">Color preferido:</label>
+        <input type="color" id="color" name="color" value="#3366cc">
+      </p>
+
+      <p>
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios"
+                  placeholder="Escribe tus comentarios"
+                  maxlength="300"></textarea>
+      </p>
+    </fieldset>
+
+    <p>
+      <input type="button" value="Consultar disponibilidad">
+      <input type="submit" value="Enviar inscripción">
+      <input type="reset" value="Restablecer">
+    </p>
+
+  </form>
+
+</body>
+</html>
