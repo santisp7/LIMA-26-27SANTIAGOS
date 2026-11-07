@@ -75,7 +75,6 @@ thead th.subcabeceira {
   font-size: 0.75rem;
 }
 
-/* ---------- Cuerpo ---------- */
 tbody tr:nth-child(odd) {
   background-color: var(--papel);
 }
@@ -127,7 +126,6 @@ tbody td {
   border-left: 2px solid var(--marfil);
 }
 
-/* ---------- Pie ---------- */
 tfoot th,
 tfoot td {
   padding: 5px 10px;
