@@ -1,0 +1,84 @@
+:root {
+    --verde-claro: rgb(146, 239, 208);
+    --verde: rgb(79, 231, 160);
+    --verde-oscuro: rgb(22, 58, 46);
+    --amarillo-claro: khaki;
+    --oro: rgb(205, 174, 0);
+}
+ 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+ 
+/* Caja con dimensiones absolutas en px para poder centrarla
+   en el viewport con position absolute + márgenes negativos */
+article {
+    box-sizing: border-box;
+    width: 300px;
+    height: 420px;
+    padding: 15px;
+    background-color: white;
+ 
+    /* todas las esquinas redondeadas menos la primera (arriba-izquierda) */
+    border-radius: 0 20px 20px 20px;
+ 
+    /* mismas reglas que text-shadow: desplazamiento-x desplazamiento-y desenfoque color */
+    box-shadow: 4px 4px 6px var(--verde-oscuro);
+ 
+    /* centrado: mitad del ancho (150px) y mitad del alto (210px) */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -210px;
+}
+ 
+img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+ 
+.imagen {
+    text-align: center;
+}
+ 
+.descripcion h1 {
+    font-size: 1.1rem;
+    color: var(--verde-oscuro);
+    margin: 10px 0;
+}
+ 
+.descripcion a {
+    /* inline-block para poder dar padding y que se vean como botones */
+    display: inline-block;
+    padding: 4px 10px;
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: var(--verde-oscuro);
+    cursor: pointer;
+}
+ 
+.precio {
+    background-color: var(--verde-claro);
+}
+ 
+.comprar {
+    /* ocupa todo el ancho de la tarjeta */
+    display: block;
+    text-align: center;
+    background-color: var(--verde);
+    margin-top: 10px;
+}
+ 
+.valoracion {
+    background-color: var(--amarillo-claro);
+    color: var(--oro);
+}
+ 
+.descripcion p {
+    font-size: 0.65rem;
+    margin: 10px 0;
+}
+ 
