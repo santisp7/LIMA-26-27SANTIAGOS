@@ -1,0 +1,101 @@
+:root {
+    --violeta-oscuro: rgb(54, 43, 91);
+    --gris: rgb(112, 119, 135);
+    --violeta-claro: rgb(195, 177, 235);
+    --borde: 2px solid rgba(145, 124, 190, 0.45);
+}
+ 
+body {
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #7775c9 0%, #bd83c2 48%, #75a9d4 100%);
+    color: var(--violeta-oscuro);
+}
+ 
+article {
+    width: 700px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -320px;
+    margin-left: -370px;
+}
+ 
+header {
+    text-align: right;
+    border-bottom: var(--borde);
+}
+ 
+h1 {
+    margin: 0px;
+}
+ 
+.fecha {
+    font-size: 0.7rem;
+    color: var(--gris);
+}
+ 
+.tiempo-actual {
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.valor {
+    font-size: 7rem;
+    font-weight: bold;
+    margin: 0px;
+}
+ 
+.estado {
+    font-size: 0.7rem;
+}
+ 
+.detalles {
+    font-size: 0.7rem;
+    color: var(--gris);
+}
+ 
+.imagen-tiempo img {
+    width: 200px;
+}
+ 
+.prevision h2 {
+    font-size: 1rem;
+    border-bottom: var(--borde);
+}
+ 
+.capsula {
+    font-size: 0.7rem;
+    background-color: var(--violeta-oscuro);
+    color: var(--violeta-claro);
+    padding: 3px;
+}
+ 
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+ 
+td:not(:last-child), th:not(:last-child) {
+    border-right: var(--borde);
+}
+ 
+.iconos img {
+    width: 30px;
+}
+ 
+.maximas {
+    font-weight: bold;
+}
+ 
+.minimas {
+    font-size: 0.7rem;
+    color: var(--gris);
+}
+ 
