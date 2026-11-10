@@ -11,8 +11,6 @@ body {
     margin: 0px;
 }
  
-/* Caja con dimensiones absolutas en px para poder centrarla
-   en el viewport con position absolute + márgenes negativos */
 article {
     box-sizing: border-box;
     width: 300px;
@@ -20,13 +18,10 @@ article {
     padding: 15px;
     background-color: white;
  
-    /* todas las esquinas redondeadas menos la primera (arriba-izquierda) */
     border-radius: 0 20px 20px 20px;
  
-    /* mismas reglas que text-shadow: desplazamiento-x desplazamiento-y desenfoque color */
     box-shadow: 4px 4px 6px var(--verde-oscuro);
  
-    /* centrado: mitad del ancho (150px) y mitad del alto (210px) */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -51,7 +46,6 @@ img {
 }
  
 .descripcion a {
-    /* inline-block para poder dar padding y que se vean como botones */
     display: inline-block;
     padding: 4px 10px;
     text-decoration: none;
@@ -65,7 +59,6 @@ img {
 }
  
 .comprar {
-    /* ocupa todo el ancho de la tarjeta */
     display: block;
     text-align: center;
     background-color: var(--verde);
