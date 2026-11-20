@@ -1,0 +1,17 @@
+.marco {
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+.top {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
