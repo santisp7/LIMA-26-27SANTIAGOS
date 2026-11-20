@@ -1,0 +1,23 @@
+.marco {
+position: relative;
+width: 800px;
+}
+
+.marco img {
+    width: 100%;
+    display: block;
+}
+
+.top {
+    position: absolute;
+    background-color: black;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 20px 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
